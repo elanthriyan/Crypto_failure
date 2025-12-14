@@ -1,0 +1,1 @@
+FLAG{lcg_predictability_gives_tokens}

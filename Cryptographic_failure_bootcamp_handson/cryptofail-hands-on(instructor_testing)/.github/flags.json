@@ -1,0 +1,10 @@
+{
+  "01-otp-reuse": "2aa4bcdcc98cf800f7732ab3f7a8979063e5ac366fd7a05873eef667bfa69bdc",
+  "02-rsa-e3": "2a55f04e3e8d7f94f1a315d8b6cda5e0b2f3c4d5e6a7b8c9d0e1f2a3b4c5d6e",
+  "03-padding-oracle": "6f1b7a9c9e3f0b1a2c4d6e7f8a9b0c1d2e3f4a5b6c7d8e9f0a1b2c3d4e5f6a7",
+  "04-aes-ecb-cutpaste": "d9f6a7b8c3e2f1a0b4c5d6e7f8a9b0c1d2e3f4a5b6c7d8e9f0a1b2c3d4e5f6",
+  "05-jwt-alg-confusion": "a1b2c3d4e5f6a7b8c9d0e1f2a3b4c5d6e7f8a9b0c1d2e3f4a5b6c7d8e9f0a1b2",
+  "06-lcg-token-predict": "b2a1c3d4e5f6a7b8c9d0e1f2a3b4c5d6e7f8a9b0c1d2e3f4a5b6c7d8e9f0a1c3",
+  "07-weak-kdf-pin": "c3b2a1d4e5f6a7b8c9d0e1f2a3b4c5d6e7f8a9b0c1d2e3f4a5b6c7d8e9f0a1c4"
+}
+

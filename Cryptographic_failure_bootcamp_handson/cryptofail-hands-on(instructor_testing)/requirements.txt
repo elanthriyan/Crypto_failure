@@ -1,0 +1,5 @@
+Flask==2.3.2
+pycryptodome==3.19.0
+python-jose==3.3.0
+requests==2.31.0
+PyYAML==6.0.1
