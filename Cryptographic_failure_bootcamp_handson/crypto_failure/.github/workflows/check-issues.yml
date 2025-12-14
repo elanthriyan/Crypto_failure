@@ -1,0 +1,34 @@
+name: Validate Flag Submission
+
+on:
+  issues:
+    types: [opened]
+
+permissions:
+  contents: write
+  issues: read
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v4
+
+    - name: Set up Python
+      uses: actions/setup-python@v5
+      with:
+        python-version: "3.11"
+
+    - name: Run issue checker
+      env:
+        FLAG_01_OTP_REUSE: ${{ secrets.FLAG_01_OTP_REUSE }}
+        FLAG_02_RSA_E3: ${{ secrets.FLAG_02_RSA_E3 }}
+        FLAG_03_PADDING_ORACLE: ${{ secrets.FLAG_03_PADDING_ORACLE }}
+        FLAG_04_ECB: ${{ secrets.FLAG_04_ECB }}
+        FLAG_05_JWT: ${{ secrets.FLAG_05_JWT }}
+        FLAG_06_LCG: ${{ secrets.FLAG_06_LCG }}
+        FLAG_07_KDF: ${{ secrets.FLAG_07_KDF }}
+      run: |
+        python cryptofail/utils/check_issue.py

@@ -1,0 +1,5 @@
+# 🏆 Leaderboard
+
+| Participant | Challenges Solved |
+|------------|------------------|
+
